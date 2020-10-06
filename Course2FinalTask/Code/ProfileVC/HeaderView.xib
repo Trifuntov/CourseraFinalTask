@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="HeaderView" reuseIdentifier="HeaderView" id="U6b-Vx-4bR" customClass="HeaderView" customModule="Course2FinalTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="469" height="86"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sID-6d-rgl">
+                    <rect key="frame" x="8" y="8" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="Gqi-GV-Igj"/>
+                        <constraint firstAttribute="width" constant="70" id="c4e-oJ-1js"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pa-EM-UOL">
+                    <rect key="frame" x="380" y="49" width="73" height="29"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <state key="normal" title="Following: ">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bD8-RN-beF">
+                    <rect key="frame" x="86" y="8" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xc6-JH-VwP">
+                    <rect key="frame" x="86" y="49" width="73" height="29"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <state key="normal" title="Followers: ">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pV4-4T-fgv">
+                    <rect key="frame" x="423" y="8" width="30" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.58823529411764708" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="subscribe:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="m7U-PM-dsh"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Xc6-JH-VwP" secondAttribute="bottom" constant="8" id="6cn-nk-izC"/>
+                <constraint firstAttribute="bottom" secondItem="sID-6d-rgl" secondAttribute="bottom" constant="8" id="Ckn-YU-F1u"/>
+                <constraint firstItem="1pa-EM-UOL" firstAttribute="centerY" secondItem="Xc6-JH-VwP" secondAttribute="centerY" id="K8T-gU-k7S"/>
+                <constraint firstItem="bD8-RN-beF" firstAttribute="leading" secondItem="sID-6d-rgl" secondAttribute="trailing" constant="8" id="LMx-f7-alI"/>
+                <constraint firstAttribute="trailing" secondItem="pV4-4T-fgv" secondAttribute="trailing" constant="16" id="MBA-a4-MS6"/>
+                <constraint firstItem="bD8-RN-beF" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="8" id="Pub-UU-u33"/>
+                <constraint firstItem="sID-6d-rgl" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="8" id="aeX-8l-sZR"/>
+                <constraint firstItem="Xc6-JH-VwP" firstAttribute="leading" secondItem="sID-6d-rgl" secondAttribute="trailing" constant="8" id="dr7-YL-W2i"/>
+                <constraint firstItem="pV4-4T-fgv" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="8" id="fGg-4l-gcK"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="1pa-EM-UOL" secondAttribute="trailing" constant="16" id="sUJ-u7-Pju"/>
+                <constraint firstItem="sID-6d-rgl" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="8" id="x7C-nZ-a5c"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="followButton" destination="pV4-4T-fgv" id="ovP-z7-B5p"/>
+                <outlet property="followButtonBlue" destination="pV4-4T-fgv" id="NBG-gC-jzz"/>
+                <outlet property="followers" destination="Xc6-JH-VwP" id="Ckc-fi-SPe"/>
+                <outlet property="following" destination="1pa-EM-UOL" id="Aey-wE-fxx"/>
+                <outlet property="nameUser" destination="bD8-RN-beF" id="Yfj-0r-OyF"/>
+                <outlet property="profileImage" destination="sID-6d-rgl" id="OUu-TI-c7h"/>
+            </connections>
+            <point key="canvasLocation" x="192.0289855072464" y="148.32589285714286"/>
+        </collectionReusableView>
+    </objects>
+</document>
